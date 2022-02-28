@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:  # Dictionary - Valid keys: name and labels
+  name: myapp-pod
+  labels:  # Dictionary - Any key value pairs
+    app: myapp
+    type: front-end
+spec:
+  containers:  # List/Array - Allows multiple containers
+  - name: nginx-container
+    image: nginx
