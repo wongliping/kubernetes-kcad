@@ -18,3 +18,4 @@ spec:  # replication controller
         - name: nginx-container
           image: nginx
 # selector is supported but not required
+# assumes same as the labels provided in the pod definition
