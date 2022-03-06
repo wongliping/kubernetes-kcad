@@ -6,7 +6,6 @@ metadata:
     app: myapp
     type: frontend
 spec:  # replication controller
-  replicas: 3
   template:  # pod template to be used by the RC to create replicas (pod-definition.yaml)
     metadata:
       name: myapp-pod
@@ -17,5 +16,6 @@ spec:  # replication controller
       containers:
         - name: nginx-container
           image: nginx
+  replicas: 3
 # selector is supported but not required
 # assumes same as the labels provided in the pod definition
